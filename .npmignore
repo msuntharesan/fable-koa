@@ -3,5 +3,7 @@
 !Fable.Import.Koa.xml
 src
 __tests__
+tests
 .vscode
 yarn.lock
+build.js
