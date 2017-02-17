@@ -13,7 +13,8 @@
   },
   "scripts": {
     "test": "ava",
-    "build": "node build"
+    "build": "node build",
+    "preversion": "npm run build"
   },
   "keywords": [
     "F#",
