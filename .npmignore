@@ -2,4 +2,6 @@
 !Fable.Import.Koa.fablemap
 !Fable.Import.Koa.xml
 src
-tests
+__tests__
+.vscode
+yarn.lock
