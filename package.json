@@ -1,0 +1,33 @@
+{
+  "name": "fable-koa",
+  "version": "0.0.1",
+  "description": "fable bindings for koa2",
+  "license": "MIT",
+  "author": {
+    "name": "Suntharesan Mohan",
+    "url": "https://github.com/vanthiyathevan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanthiyathevan/fable-koa"
+  },
+  "scripts": {
+    "test": "ava",
+    "build": "node build"
+  },
+  "keywords": [
+    "F#",
+    "Fable",
+    "Fable.Import",
+    "koa2"
+  ],
+  "devDependencies": {
+    "ava": "^0.18.1",
+    "del": "^2.2.2",
+    "fable-compiler": "^0.7.42",
+    "fable-core": "^0.7.26",
+    "fable-powerpack": "^0.0.19",
+    "koa": "next",
+    "supertest": "^3.0.0"
+  }
+}

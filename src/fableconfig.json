@@ -1,0 +1,7 @@
+{
+    "projFile": "./Fable.Import.Koa.fsx",
+    "sourceMaps": false,
+    "module": "commonjs",
+    "outDir": "..",
+    "dll": true
+}

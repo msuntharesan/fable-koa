@@ -1,0 +1,5 @@
+{
+    "projFile": "index.fsx",
+    "module": "commonjs",
+    "outDir": "../__tests__"
+}
