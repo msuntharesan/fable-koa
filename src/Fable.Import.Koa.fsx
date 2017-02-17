@@ -9,8 +9,12 @@ open Fable.Import.Node
 open Fable.Import.Node.http_types
 open Fable.Import.Node.events
 
-//   and Middleware = (ctx: Context, ?next: unit -> Promise<unit>) -> Promise<unit>
-//   and Middleware (ctx: Context, ?next: unit -> Promise<unit>) = Promise<unit>
+type [<AllowNullLiteral>] ListenOptions =
+    abstract port: float option with get, set
+    abstract host: string option with get, set
+    abstract backlog: float option with get, set
+    abstract path: string option with get, set
+    abstract exclusive: bool option with get, set
 
 [<AutoOpen>]
 module koa =
@@ -139,7 +143,7 @@ module koa =
     member __.listen(path: string, ?listeningListener: Function): Server = jsNative
     member __.listen(handle: obj, ?backlog: float, ?listeningListener: Function): Server = jsNative
     member __.listen(handle: obj, ?listeningListener: Function): Server = jsNative
-    // member __.listen(options: net_types.ListenOptions, ?listeningListener: Function): Server = jsNative
+    member __.listen(options: ListenOptions, ?listeningListener: Function): Server = jsNative
     member __.callback(): Func<IncomingMessage, ServerResponse, unit> = jsNative
     member __.onerror(err: obj): unit = jsNative
     member __.``use``(middleware: Middleware): Koa = jsNative
